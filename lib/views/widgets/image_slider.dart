@@ -21,8 +21,7 @@ class CarouselItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          image:
-              DecorationImage(fit: BoxFit.cover, image: NetworkImage(image))),
+          image: DecorationImage(fit: BoxFit.cover, image: AssetImage(image))),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,

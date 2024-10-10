@@ -19,7 +19,7 @@ class DestinationItem extends StatelessWidget {
       child: Ink(
         decoration: BoxDecoration(
             image: DecorationImage(
-              image: NetworkImage(image),
+              image: AssetImage(image),
               fit: BoxFit.cover,
             ),
             color: Colors.amber,

@@ -54,8 +54,7 @@ class DetailsScreen extends StatelessWidget {
             flexibleSpace: Container(
               decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: NetworkImage(destination.image),
-                      fit: BoxFit.cover)),
+                      image: AssetImage(destination.image), fit: BoxFit.cover)),
               child: Container(
                 decoration: BoxDecoration(
                   gradient: LinearGradient(colors: [

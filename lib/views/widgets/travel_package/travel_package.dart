@@ -43,7 +43,7 @@ class TravelPackage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(12.0),
                     image: DecorationImage(
                       fit: BoxFit.cover,
-                      image: NetworkImage(image),
+                      image: AssetImage(image),
                     ),
                   ),
                 ),

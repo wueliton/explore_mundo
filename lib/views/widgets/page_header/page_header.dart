@@ -31,7 +31,7 @@ class PageHeader extends SliverPersistentHeaderDelegate {
         Container(
             decoration: BoxDecoration(
                 image: DecorationImage(
-                    fit: BoxFit.cover, image: NetworkImage(image)))),
+                    fit: BoxFit.cover, image: AssetImage(image)))),
         Container(
           decoration: BoxDecoration(
               gradient: LinearGradient(
