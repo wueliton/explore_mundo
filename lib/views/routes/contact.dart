@@ -1,4 +1,5 @@
 import 'package:explore_mundo/contants/typography.dart';
+import 'package:explore_mundo/utils/open_url.dart';
 import 'package:explore_mundo/views/widgets/button/button.dart';
 import 'package:explore_mundo/views/widgets/details_app_bar/details_app_bar.dart';
 import 'package:flutter/material.dart';
@@ -43,19 +44,27 @@ class ContactScreen extends StatelessWidget {
                           size: 16.0,
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        openUrl(
+                            Uri.parse('mailto:contato@exploremundo.com.br'));
+                      },
+                    ),
+                    const SizedBox(
+                      height: 12.0,
                     ),
                     Button(
                       '(11) 90000-0000',
                       icon: const Padding(
                         padding: EdgeInsets.only(right: 8.0),
                         child: Icon(
-                          Icons.mail,
+                          Icons.phone_iphone_rounded,
                           color: Colors.white,
                           size: 16.0,
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        openUrl(Uri.parse('tel:11900000000'));
+                      },
                     )
                   ],
                 ),
